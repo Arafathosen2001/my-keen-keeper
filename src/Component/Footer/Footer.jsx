@@ -7,7 +7,7 @@ const Footer = () => {
         
         <footer className="footer gap-5 footer-horizontal footer-center bg-[#244D3F] text-primary-content p-10">
                 <aside className='space-y-3'>
-                   <h2 className='text-6xl font-bold'>KeenKeeper</h2>
+                   <h2 className='text-2xl md:text-6xl font-bold'>KeenKeeper</h2>
                     <p className="">
                     Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.
                     </p>
@@ -28,7 +28,7 @@ const Footer = () => {
                         
                     </div>
             </nav>
-            <div className="container flex justify-between items-center border-t border-[#E9E9E9] pt-4">
+            <div className="container flex flex-col md:flex-row justify-between items-center border-t border-[#E9E9E9] pt-4">
                 <div className="text-sm">© {new Date().getFullYear()} KeenKeeper. All rights reserved.</div>
                 <div className="text-sm">Privacy Policy | Terms of Service</div>
             </div>
