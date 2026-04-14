@@ -28,7 +28,7 @@ const Footer = () => {
                         
                     </div>
             </nav>
-            <div className="container flex justify-between items-center border-t border-gray-50 pt-4">
+            <div className="container flex justify-between items-center border-t border-[#E9E9E9] pt-4">
                 <div className="text-sm">© {new Date().getFullYear()} KeenKeeper. All rights reserved.</div>
                 <div className="text-sm">Privacy Policy | Terms of Service</div>
             </div>
