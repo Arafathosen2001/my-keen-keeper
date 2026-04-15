@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "name": "Amit Rahman",
+    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+    "email": "amit.rahman@gmail.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": [
+      "work",
+      "developer"
+    ],
+    "bio": "Colleague from my first software job. We still discuss backend architecture and career growth.",
+    "goal": 14,
+    "next_due_date": "2026-04-03"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "picture": "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+    "email": "nusrat.jahan@gmail.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": [
+      "family"
+    ],
+    "bio": "Cousin sister. We usually meet during family gatherings and festivals.",
+    "goal": 10,
+    "next_due_date": "2026-04-06"
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Hasan",
+    "picture": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
+    "email": "tanvir.hasan@gmail.com",
+    "days_since_contact": 6,
+    "status": "on-track",
+    "tags": [
+      "hobby",
+      "gaming"
+    ],
+    "bio": "School friend. We play online games together almost every weekend.",
+    "goal": 10,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 4,
+    "name": "Imran Hossain",
+    "picture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+    "email": "imran.hossain@gmail.com",
+    "days_since_contact": 9,
+    "status": "on-track",
+    "tags": [
+      "travel",
+      "photography"
+    ],
+    "bio": "Travel partner. Explored Cox’s Bazar and Bandarban together and loves photography.",
+    "goal": 12,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 5,
+    "name": "Sarah Ahmed",
+    "picture": "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
+    "email": "sarah.ahmed@gmail.com",
+    "days_since_contact": 11,
+    "status": "almost due",
+    "tags": [
+      "work",
+      "design"
+    ],
+    "bio": "UI/UX designer from a startup project. Great sense of design and user experience.",
+    "goal": 12,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 6,
+    "name": "Rafiul Karim",
+    "picture": "https://images.unsplash.com/photo-1527980965255-d3b416303d12",
+    "email": "rafiul.karim@gmail.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": [
+      "hobby",
+      "fitness"
+    ],
+    "bio": "Gym partner. Helps me stay consistent with workouts and diet.",
+    "goal": 12,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 7,
+    "name": "Farzana Akter",
+    "picture": "https://images.unsplash.com/photo-1517841905240-472988babdf9",
+    "email": "farzana.akter@gmail.com",
+    "days_since_contact": 22,
+    "status": "overdue",
+    "tags": [
+      "hobby",
+      "debate"
+    ],
+    "bio": "University debate club friend. Loves discussing politics and social issues.",
+    "goal": 14,
+    "next_due_date": "2026-04-02"
+  },
+  {
+    "id": 8,
+    "name": "Mehedi Hasan",
+    "picture": "https://images.unsplash.com/photo-1511367461989-f85a21fda167",
+    "email": "mehedi.hasan@gmail.com",
+    "days_since_contact": 4,
+    "status": "on-track",
+    "tags": [
+      "work",
+      "developer"
+    ],
+    "bio": "Coding partner. We collaborate on React and backend projects regularly.",
+    "goal": 7,
+    "next_due_date": "2026-04-19"
+  }
+]
