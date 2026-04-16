@@ -2,7 +2,7 @@ import React from 'react';
 import FriendsCard from './FriendsCard';
 
 const AllFriends = ({ friendsData }) => {
-    console.log(friendsData);
+    // console.log(typeof friendsData);
     
     return (
         <div className='my-10'>

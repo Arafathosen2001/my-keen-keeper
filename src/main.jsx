@@ -9,6 +9,7 @@ import EError from './Pages/error/EError'
 import Timeline from './Pages/Timeline/Timeline'
 import Stats from './Pages/Stats/Stats'
 import FriensDetiles from './Component/AllFriends/FriensDetiles'
+import ContextProviderData from './Context/ContextProvider.jsx'
 
 const router = createBrowserRouter([
   {
@@ -17,10 +18,8 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: () => {
-          return fetch('friends.json')
-        },
-        HydrateFallback: () => <div className='container text-center text-5xl mt-20'>Loading initial application state...</div>,
+        loader: () => (fetch('/friends.json')),
+        HydrateFallback: () => <h1 className='container h-screen text-center text-5xl mt-20'><span className="loading loading-bars loading-xl"></span>Loading ...</h1>,
         Component: Homepage
       },
       {
@@ -33,10 +32,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'friends/:friendId',
-        loader:() => {
-          return fetch('/friends.json')
-        },
-        HydrateFallback: () => <div className='container text-center text-5xl mt-20'>Loading initial application state...</div>,
+        loader: () => ( fetch('/friends.json')),
+        HydrateFallback: () => <div className='container text-center text-5xl mt-20'><span className="loading loading-bars loading-xl"></span>Loading ...</div>,
         Component:FriensDetiles
       }
     ],
@@ -48,6 +45,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <ContextProviderData>
+      <RouterProvider router={router} />
+    </ContextProviderData>
   </StrictMode>,
 )

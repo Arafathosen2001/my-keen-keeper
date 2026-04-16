@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
+import { Context } from '../../Context/ContextProvider';
 
 const FriendsCard = ({ friend }) => {
     const { picture, name, days_since_contact, status, tags } = friend;
-    // console.log(images, name);
     return (
         
             <Link to={`/friends/${friend.id}`} className="space-y-3 text-center bg-white p-5 rounded-lg shadow-xl">
