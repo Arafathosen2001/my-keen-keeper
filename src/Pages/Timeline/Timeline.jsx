@@ -12,16 +12,37 @@ const Timeline = () => {
             );
             console.log(filteredData);
     return (
-        <div className='container py-20'>
+        <div className='container py-20 px-5 md:px-10 lg:px-10 xl:px-0'>
             <h1 className='text-5xl font-bold'>Timeline</h1>
-            <div className="dropdown dropdown-start">
-                <div tabIndex={0} role="button" className="btn m-1">Filter timeline ⬇ </div>
-                <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                    <li><a onClick={() => setFilterType('All')}>All</a></li>
-                    <li><a onClick={() => setFilterType('Call')}>Call</a></li>
-                    <li><a onClick={() => setFilterType('Text')}>Text</a></li>
-                    <li><a onClick={() => setFilterType('Video')}>Video</a></li>
-                </ul>
+            <div className=" flex flex-col md:flex-row items-center justify-between mt-5 gap-5">
+                
+                <input
+                    type="text"
+                    placeholder="Call / Text / Video"
+                    className="input input-bordered max-w-md my-5"
+                    onChange={(e) => {
+                        const value = e.target.value;
+
+                        if (
+                            value == '' ||
+                            value == 'Call' ||
+                            value == 'Text' ||
+                            value == 'Video'
+                        ) {
+                            setFilterType(value || 'All');
+                        }
+                    }}
+                />
+                <div className="dropdown dropdown-center ">
+                    <div tabIndex={0} role="button" className="btn m-1">Filter timeline ⬇ </div>
+                    <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                        <li><a onClick={() => setFilterType('All')}>All</a></li>
+                        <li><a onClick={() => setFilterType('Call')}>Call</a></li>
+                        <li><a onClick={() => setFilterType('Text')}>Text</a></li>
+                        <li><a onClick={() => setFilterType('Video')}>Video</a></li>
+                    </ul>
+                </div>
+                <input type="date" className="input" />
             </div>
             {filteredData.length > 0 ? (
                 <div className="">

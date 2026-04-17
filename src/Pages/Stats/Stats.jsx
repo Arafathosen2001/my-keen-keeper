@@ -23,7 +23,7 @@ const Stats = () => {
         { name: 'Video', value: videoCount, fill: '#FFBB28' },
     ];
     return (
-        <div className='container'>
+        <div className='container py-20 px-5 md:px-10 lg:px-10 xl:px-0'>
             <h1 className='text-5xl font-bold mt-10'>Friendship Analytics</h1>
             <div className=" bg-white p-5 rounded-lg shadow-md my-10">
                 <p>By Interaction Type</p>

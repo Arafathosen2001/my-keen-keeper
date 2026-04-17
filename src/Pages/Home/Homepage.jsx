@@ -8,7 +8,7 @@ const Homepage = () => {
     const friendsData = useLoaderData();
     // console.log(friendsData)
     return (
-        <div className='container min-h-screen'>
+        <div className='container py-20 px-5 md:px-10 lg:px-10 xl:px-0'>
             <Baner></Baner>
             <SummaryCard></SummaryCard>
             <AllFriends friendsData={friendsData}></AllFriends>

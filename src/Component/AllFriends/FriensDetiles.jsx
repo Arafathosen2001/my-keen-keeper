@@ -17,7 +17,7 @@ const FriensDetiles = () => {
     // console.log(friend)
     const { picture, name, days_since_contact, status, tags, email, bio, goal, next_due_date } = friend;
     return (
-        <div className='container py-20'>
+        <div className='container py-20 px-5 md:px-10 lg:px-10 xl:px-0'>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3 justify-between ">
                 <div className=" col-span-2 row-span-2">
                     <div className="space-y-3 text-center bg-white p-5 rounded-lg shadow-xl">

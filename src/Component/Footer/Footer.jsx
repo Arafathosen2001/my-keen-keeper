@@ -1,13 +1,14 @@
 import React from 'react';
 import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare } from 'react-icons/fa';
 import { FaX, FaXTwitter } from 'react-icons/fa6';
+import logo from '../../assets/logo-xl.png';
 
 const Footer = () => {
     return (
         
         <footer className="footer gap-5 footer-horizontal footer-center bg-[#244D3F] text-primary-content p-10">
                 <aside className='space-y-3'>
-                   <h2 className='text-2xl md:text-6xl font-bold'>KeenKeeper</h2>
+                   <h2 className=''><img src={logo} alt="Logo" /></h2>
                     <p className="">
                     Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.
                     </p>

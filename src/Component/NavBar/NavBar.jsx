@@ -2,14 +2,16 @@ import React from 'react';
 import './Nav.css'
 import { Link, NavLink } from 'react-router';
 import { AiOutlineHome } from 'react-icons/ai';
-// import logo from '../assest/logo.png'
+import { RiTimeLine } from 'react-icons/ri';
+import { ImStatsDots } from 'react-icons/im';
+import logo from '../../assets/logo.png';
 
 const NavBar = () => {
     const navItenms = (
         <>
             <li><NavLink to="/"><AiOutlineHome />Home</NavLink></li>
-            <li><NavLink to="/timeline">Timeline</NavLink></li>
-            <li><NavLink to="/stats">Stats</NavLink></li>
+            <li><NavLink to="/timeline"><RiTimeLine />Timeline</NavLink></li>
+            <li><NavLink to="/stats"><ImStatsDots />Stats</NavLink></li>
         </>
     );
     return (
@@ -25,7 +27,7 @@ const NavBar = () => {
                             {navItenms}
                         </ul>
                     </div>
-                    <Link to="/" className=" text-2xl"><span className='font-bold'>Keen</span>Keeper</Link>
+                    <Link to="/" className=" text-2xl"><img src={logo} alt="Logo" /></Link>
                 </div>
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
