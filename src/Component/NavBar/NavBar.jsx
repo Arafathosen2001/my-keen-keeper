@@ -2,6 +2,7 @@ import React from 'react';
 import './Nav.css'
 import { Link, NavLink } from 'react-router';
 import { AiOutlineHome } from 'react-icons/ai';
+// import logo from '../assest/logo.png'
 
 const NavBar = () => {
     const navItenms = (

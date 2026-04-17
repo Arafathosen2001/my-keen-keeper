@@ -5,7 +5,7 @@ import { MdOutlineTextsms } from 'react-icons/md';
 import { IoVideocamOutline } from 'react-icons/io5';
 const Timeline = () => {
     const { frindg } = useContext(Context);
-    console.log(frindg);
+    // console.log(frindg);
     return (
         <div className='container py-20'>
             <h1 className='text-5xl font-bold'>Timeline {frindg.length}</h1>
@@ -22,14 +22,14 @@ const Timeline = () => {
                         <div key={index} className="flex gap-5 items-center bg-white p-5 rounded-lg shadow-md mt-5">
                             <h3 className="text-xl font-bold">{friend.actionType == 'Call' && <LuPhoneCall />}{friend.actionType == 'Text' && <MdOutlineTextsms />}{friend.actionType == 'Video' && <IoVideocamOutline /> }</h3>
                             <div className="">
-                                <h3 className="text-xl font-bold">{friend.userData?.name || 'Unknown'}</h3>
+                                <h3 className="text-xl font-bold">{friend.actionType} <span className='text-sm'>with</span> <span className='font-normal'>{friend.userData?.name || 'Unknown'}</span></h3>
                                 <p className="text-gray-500">{friend.timestamp?.toLocaleString() || 'Unknown'}</p>
                             </div>
                         </div>)}
                 </div>
             ) : (
                     <div className="text-center py-10">
-                        <h3 className='text-gray-500 text-5xl'>No recent interactions to show</h3>
+                        <h3 className='text-gray-500 text-5xl'>Not Available Data</h3>
                     </div>
                 )}
             

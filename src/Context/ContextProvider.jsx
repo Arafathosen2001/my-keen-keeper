@@ -4,7 +4,7 @@ export const Context = createContext();
 const ContextProviderData = ({ children }) => {
     const [frindg, setFriendg] = useState([]);
     const handelButtonClick = (friend, type) => {
-        console.log(friend)
+        // console.log(friend)
         const isExist = frindg.find(frnd => frnd.userData.id == friend.id);
         if (!isExist) {
             toast.success(`${friend.name} added to ${type} timeline!`);
