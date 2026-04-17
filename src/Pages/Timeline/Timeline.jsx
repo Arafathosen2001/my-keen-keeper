@@ -10,7 +10,7 @@ const Timeline = () => {
     const filteredData =filterType === 'All'? frindg : frindg.filter(
                 (friend) => friend.actionType === filterType
             );
-            console.log(filteredData);
+            // console.log(filteredData);
     return (
         <div className='container py-20 px-5 md:px-10 lg:px-10 xl:px-0'>
             <h1 className='text-5xl font-bold'>Timeline</h1>
