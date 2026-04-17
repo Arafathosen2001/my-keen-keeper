@@ -27,7 +27,7 @@ const FriensDetiles = () => {
                             </div>
                         </div>
                         <h2 className='font-semibold text-2xl'>{name}</h2>
-                        <p ><span className='bg-[#EFAD44] px-3 py-1 rounded-3xl text-white '>{status}</span></p>
+                        <p ><span className={` px-3 py-1 rounded-3xl text-white ${friend.status == 'almost due' && 'bg-[#EFAD44]'} ${friend.status == 'overdue' && 'bg-red-600'} ${friend.status == 'on-track' && 'bg-green-600'} `}>{status}</span></p>
                         <p >{tags.map((tag, index) => (
                             <span key={index} className='bg-[#CBFADB] px-3 py-1 rounded-3xl mr-2'>{tag}</span>
                         ))}</p>
