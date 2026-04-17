@@ -15,7 +15,7 @@ const Stats = () => {
     const videoCount = frindg.filter(
         (friend) => friend.actionType === 'Video'
     ).length;
-    console.log(frindg.length);
+    // console.log(frindg.length);
    
     const data = [
         { name: 'Call', value: callCount, fill: '#0088FE' },
